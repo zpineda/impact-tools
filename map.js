@@ -10,10 +10,10 @@
       };
 
       //YOUR TURN: add your Mapbox access token 
-      mapboxgl.accessToken = '<Replace with your access token>';
+      mapboxgl.accessToken = '<pk.eyJ1IjoienBpbmVkYSIsImEiOiJjazVkMnd6NTQxc2NlM2RvM2E3cHI3OGZuIn0.V4UovUJneRqHb7f4AS_hoA>';
       var map = new mapboxgl.Map({
         container: 'map', // container id
-        style: "<Replace with a Mapbox style url>", //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
+        style: "<mapbox://styles/zpineda/cjp2rn6b52dx02sqt2r97g8wbstyle url>", //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
         center: [-122.411464, 37.7852299], // starting position [lng, lat]
         zoom: 9, // starting zoom
         transformRequest: transformRequest
@@ -28,7 +28,7 @@
       function init() {
         Tabletop.init({
           // YOUR TURN: change 'key' value to point to your spreadsheet
-          key: '<Link to your shared spreadsheet goes here!>',
+          key: '<https://docs.google.com/spreadsheets/d/1AXy99ylu0nUG_5KVNCq484YgyNs7FgTXSXvGMhHub5w/edit?usp=sharing>',
           // once Tabletop has loaded the data, it passes it to the 'callback' function, 'addPoints', defined below
           callback: addPoints,
           simpleSheet: true
